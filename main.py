@@ -27,7 +27,7 @@ def main():
     data = []
     for ticker in targets:
         historical = rs.stocks.get_stock_historicals(
-            ticker, interval='5minute', span='week')
+            ticker, interval='5minute', span='day')
         for row in historical:
             data.append((ticker, row['begins_at'].replace('T', ' ').replace('Z', ''), row['open_price'],
                          row['close_price'], row['high_price'], row['low_price'], row['volume'],))
