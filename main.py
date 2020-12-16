@@ -31,7 +31,7 @@ def main():
         for row in historical:
             data.append((ticker, row['begins_at'].replace('T', ' ').replace('Z', ''), row['open_price'],
                          row['close_price'], row['high_price'], row['low_price'], row['volume'],))
-    sql = "INSERT INTO `data` (`ticker`, `begins_at`, `open_price`, `close_price`, `high_price`, `low_price`, `volume`) VALUES (%s, %s, %s, %s, %s, %s, %s);"
+    sql = "REPLACE INTO `data` (`ticker`, `begins_at`, `open_price`, `close_price`, `high_price`, `low_price`, `volume`) VALUES (%s, %s, %s, %s, %s, %s, %s);"
     conn.executemany(sql, data)
     db.commit()
 
