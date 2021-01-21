@@ -6,7 +6,7 @@ import robin_stocks as rs
 
 
 targets = ['MSFT', 'SPY', 'BABA', 'AMZN', 'NDAQ', 'AAPL', 'TCEHY', 'AMD', 'GOOGL', 'NET', 'ENPH', 'ICLN', 'NVDA', 'PANW', 'JKS', 'LOW', 'PYPL',
-           'SQ', 'RUN', 'FCEL', 'TSLA', 'BE', 'MRNA', 'CCL', 'NCLH', 'AAL', 'ACB', 'TWTR', 'DAL', 'FCAU', 'LUV', 'WORK', 'GPRO', 'PLAN', 'GEVO', 'DKNG']
+           'SQ', 'RUN', 'FCEL', 'TSLA', 'BE', 'MRNA', 'CCL', 'NCLH', 'AAL', 'ACB', 'TWTR', 'DAL', 'LUV', 'WORK', 'GPRO', 'PLAN', 'GEVO', 'DKNG', 'DUST', 'NUGT']
 
 
 def main():
